@@ -1,0 +1,15 @@
+set -o vi
+
+export PATH=$PATH:/usr/sbin:/sbin:/usr/lib64/zulu-openjdk11/bin:/usr/lib64/zulu-openjdk11/jre/bin:/home/npk/.local/bin
+
+export LD_LIBRARY_PATH=/usr/lib64/libressl:/usr/local/lib:$LD_LIBRARY_PATH
+
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+
+export SBCL_HOME=/usr/lib64/sbcl
+export EDITOR=vim
+
+alias pkg_list="ls /var/log/packages/ | grep -i ";
+alias pkg="slackpkg";
+alias spkg="sudo slackpkg"; 
